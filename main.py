@@ -78,6 +78,17 @@ def print_people(*people):
 print_people("Nick", "Dan", "Angie", "Dani")
 
 
+S = [1, 2, 3, 4, 5, 6]
+
+for i in range(0, 6, 1):
+    print("index:", i)
+    print("List:", S[i])
+
+S[2] = 10
+print("S[2]:", S[2])
+print(S)
+
+
 # Return values from functions
 
 def do_math(num1, num2):
@@ -140,3 +151,58 @@ print(string)
 # ^ means exception
 new = re.sub('[^0-9]', '', string)
 print(new)
+
+
+ordem = 0
+gratis = 0
+trader = 20
+while gratis < trader:
+    ordem += 1
+    gratis = gratis + 2.49
+    trader = trader + 1.49
+
+ordem = 0
+gratis = 0
+trader = 20
+for ordem in range(1, 40):
+    ordem += 1
+    gratis = gratis + 2.49
+    trader = trader + 1.49
+
+print('Número de ordens: ', ordem)
+print("Plano grátis: ", gratis)
+print("Somos trader: ", trader)
+
+'''
+# List Methods
+
+append() - Add single element to the list
+extend() - Add elements of a list to another list 
+insert() - Inserts element to the list
+remove() - Removes element from the list
+index() - Returns smallest index of elementin list
+count() - returns occurrences of element in a list
+pop() - Removes element at given index
+reverse() - Reverses a list
+sort() - sorts elements of a list
+copy() - Returns shallow copy of a list
+clear() - Removes all items from the list
+any() - checks if any element of iterable is True
+all() - Returnes True when all elements in iterable is True
+ascii() - Returns string containing printable representation
+bool() - Converts a value to boolean
+enumerate() - Returns an enumerate object
+filter() - Constructs iterator from elements which are True
+iter() - Returns iterator for an object
+list() - Creates list in Python
+len() - Returns length of an object
+max() - Returns largest element
+min() - Returns smallest element
+map() - Applies function and returns a list
+reversed() - Returns reversed iterator of a sequence
+slice() - Creates a slice object specified by range()
+sorted() - Returns sorted list from given iterable
+sum() - Add items of an iterable
+zip() - Returns an iterator of tuples
+
+'''
