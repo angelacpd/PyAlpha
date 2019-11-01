@@ -6,4 +6,5 @@ payload = {"longUrl": "http://example.com/"}
 headers = {"Content-Type": "application/json"}
 r = requests.post(url, json=payload, headers=headers)
 
+print(r.headers)
 print(r.text)
